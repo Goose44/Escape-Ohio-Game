@@ -1,0 +1,100 @@
+<html>
+
+<title>Escape Ohio Game</title>
+
+</head>
+
+<style>
+
+* {
+
+	padding: 0px;
+	margin: 0px;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-height: 100%;
+	
+
+}
+
+#jeremy {
+
+	width: 700px;
+	position: absolute;
+	top: 35%;
+	left: 28%;
+
+}
+
+#enter1 {
+
+	width: 75px;
+	height: 70px;
+	position: absolute;
+	top: 40%;
+	left: 73%;
+	background-color: transparent;
+	border: 0px;
+	
+
+}
+
+h1 {
+
+	font-family: monospace;
+	font-size: 25px;
+	position: absolute;
+	top: 5%;
+	
+
+}
+
+
+
+
+
+</style>
+
+<body background="Background1.png">
+<a href="Village Hall.html">
+<button id="enter1"></button>
+</a>
+<img id="jeremy" src="Jeremy.png"></img>
+
+<canvas id="game" width="1040" height="640"></canvas>
+
+<h1 id="Thing">Movement is not yet out.<br>
+To enter the hall, just<br>
+click the door.</h1>
+
+
+
+
+</body>
+
+<script>
+
+var spriteX = 0;
+var spriteY = 0;
+var visibleCanvas = null;
+var context = null;
+var sprite = null;
+
+var name = prompt("Please enter a username in the box below.");
+alert("Welcome, " + name);
+
+var enter1 = document.getElementById("enter1");
+
+enter1.addEventListener("click", function(e){
+
+	alert("Entering village hall...");
+
+});
+
+
+
+
+</script>
+
+</html>

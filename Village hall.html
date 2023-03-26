@@ -1,0 +1,88 @@
+<html>
+
+<head>
+
+<title>Village Hall</title>
+
+</head>
+
+<style>
+
+* {
+
+	padding: 0px;
+	margin: 0px;
+	font-family: monospace;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+
+}
+
+h1 {
+
+	position: absolute;
+	font-size: 50px;
+	top: 2%;
+	left: -50%;
+	animation: move 5s;
+	color: white;
+
+}
+
+
+#sprite {
+
+	position: absolute;
+	top: 10%;
+	left: 45%;
+
+}
+
+#enter {
+
+	width: 20%;
+	height: 80px;
+	position: absolute;
+	top: 65%;
+	left: 33%;
+	background-color: transparent;
+	border: 0px;
+
+}
+
+@keyframes move {
+
+	0%{left: -50%;}
+	50%{left: 45%;}
+	100%{left: -20%;}
+
+}
+
+@keyframes movesprite {
+
+	0%{left: 45%;}
+	50%{left: -20;}
+	
+
+}
+
+
+
+</style>
+
+<body background="Village Hall interior.png">
+
+
+<h1>Village Hall</h1>
+
+<img id="sprite" src="Jeremy.png"></img>
+
+<button id="enter"></button>
+
+
+</body>
+
+
+
+
+</html>
